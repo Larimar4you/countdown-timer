@@ -1,28 +1,23 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-// Отримуємо форму
 const form = document.querySelector('.form');
 
-// Обробка сабміту форми
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Запобігаємо стандартній поведінці форми
+  event.preventDefault();
 
-  // Отримуємо значення з форми
   const delayInput = document.querySelector('input[name="delay"]');
   const stateInputs = document.querySelectorAll('input[name="state"]');
 
   const delay = Number(delayInput.value);
   let state;
 
-  // Отримуємо вибір стану
   stateInputs.forEach(input => {
     if (input.checked) {
       state = input.value;
     }
   });
 
-  // Створення промісу
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {
@@ -33,7 +28,6 @@ form.addEventListener('submit', function (event) {
     }, delay);
   });
 
-  // Обробка результату промісу
   promise
     .then(delay => {
       iziToast.success({
