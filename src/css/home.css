@@ -9,46 +9,45 @@
 
 .home-card {
   width: 100%;
-  max-width: 420px;
-  padding: 32px;
+  max-width: 360px;
+  padding: 28px 24px;
   text-align: center;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .home-title {
   margin: 0 0 12px;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 1.2;
   font-weight: 600;
   color: #2e2f42;
 }
 
 .home-text {
-  margin: 0 0 24px;
+  margin: 0 0 20px;
+  font-size: 16px;
   color: #555555;
 }
 
 .home-nav {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .home-link {
   display: block;
-  padding: 12px 20px;
+  padding: 10px 20px;
   color: #ffffff;
   background-color: #4e75ff;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
-  transition:
-    background-color 250ms ease,
-    transform 250ms ease;
+  transition: background-color 250ms ease;
 }
 
 .home-link:hover,
 .home-link:focus {
   background-color: #6c8cff;
-  transform: translateY(-1px);
 }

@@ -25,6 +25,7 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
+        position: 'topRight',
       });
 
       startBtn.disabled = true;
@@ -37,6 +38,7 @@ const options = {
 };
 
 flatpickr(datePicker, options);
+
 function convertMs(ms) {
   const second = 1000;
   const minute = second * 60;
@@ -69,11 +71,14 @@ function updateTimer() {
     startBtn.disabled = true;
     datePicker.disabled = false;
     userSelectedDate = null;
+    startBtn.classList.remove('is-running');
 
     iziToast.success({
       title: 'Success',
       message: "Time's up!",
+      position: 'topRight',
     });
+
     return;
   }
 
@@ -89,6 +94,7 @@ startBtn.addEventListener('click', () => {
   if (userSelectedDate) {
     startBtn.disabled = true;
     datePicker.disabled = true;
+    startBtn.classList.add('is-running');
 
     updateTimer();
     countdownInterval = setInterval(updateTimer, 1000);

@@ -34,6 +34,7 @@ form.addEventListener('submit', function (event) {
         title: 'Success',
         message: `✅ Fulfilled promise in ${delay}ms`,
         position: 'topRight',
+        class: 'toast-middle-right',
       });
     })
     .catch(delay => {
@@ -41,6 +42,7 @@ form.addEventListener('submit', function (event) {
         title: 'Error',
         message: `❌ Rejected promise in ${delay}ms`,
         position: 'topRight',
+        class: 'toast-middle-right',
       });
     });
 });
