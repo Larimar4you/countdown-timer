@@ -5,11 +5,11 @@ asynchronous JavaScript, timers, and promises.
 
 ## Live Demo
 
-[Open live page](https://larimar4you.github.io/goit-advancedjs-hw-02/)
+[Open live page](https://larimar4you.github.io/countdown-timer/)
 
 ## Repository
 
-[GitHub repository](https://github.com/Larimar4you/goit-advancedjs-hw-02)
+[GitHub repository](https://github.com/Larimar4you/countdown-timer)
 
 ## Tasks
 
@@ -72,13 +72,13 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/Larimar4you/goit-advancedjs-hw-02.git
+git clone https://[github.com/Larimar4you/countdown-timer.git]
 ```
 
 Go to the project folder:
 
 ```bash
-cd goit-advancedjs-hw-02
+cd countdown-timer
 ```
 
 Install dependencies:

@@ -1,11 +1,11 @@
 {
-  "name": "goit-advancedjs-hw-02",
+  "name": "countdown-timer",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-advancedjs-hw-02/",
+    "build": "vite build --base=/countdown-timer/",
     "preview": "vite preview"
   },
   "devDependencies": {
