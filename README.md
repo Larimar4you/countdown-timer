@@ -1,4 +1,4 @@
-# Advanced JavaScript Homework 02
+# countdown-timer
 
 This project contains two tasks from the Advanced JavaScript course topic:
 asynchronous JavaScript, timers, and promises.
